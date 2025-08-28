@@ -4,12 +4,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 60%;
+            margin: 20px 0;
+            font-family: Arial, sans-serif;
+        }
+        th, td {
+            border: 2px solid #4CAF50;
+            padding: 10px 16px;
+            text-align: left;
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        tr:hover {
+            background-color: #e0f7fa;
+        }
+    </style>
 </head>
+
 <body>
-    
     <h2>Bienvenidos a la página de servicios</h2>
 
     <a href="../index.html">Volver al index</a>
+
+    <a href="../index.html"><img src="../img/boton_inicio.png" width= "40px" alt="Imagen boton_inicio" title= "Ir al index"></a>
+
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Nombre</th>
+            <th>Apellidos</th>
+            <th>Email</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Juan</td>
+            <td>Pérez</td>
+            <td>juan.perez@example.com</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>María</td>
+            <td>Gómez</td>
+            <td>maria.gomez@example.com</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Carlos</td>
+            <td>Hernández</td>
+            <td>carlos.hernandez@example.com</td>
+        </tr>
+    </table>
+
 
 </body>
 </html>

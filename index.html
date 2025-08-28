@@ -4,15 +4,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <!-- API de WhatsApp -->
+    <script>
+        function openWhatsApp() {
+            var phone = "573046603082"; // Cambia este número por el tuyo
+            var message = encodeURIComponent("¡Hola! Quiero más información.");
+            var url = "https://wa.me/" + phone + "?text=" + message;
+            window.open(url, "_blank");
+        }
+    </script>
+
 </head>
+
 <body>
+
+    <a href=""><img src="img/boton_inicio.png" width= "40px" alt="" title= "Inicio"></a>
+    <a href="páginas/contactos.html"><img src="img/boton_contacto.png" width= "40px" alt="" title= "Ir a Contactos"></a>
+    <a href="páginas/servicios.html"><img src="img/boton_servicios.png" width= "40px" alt="" title= "Ir a Servicios"></a>
 
 <!-- Esto es un comentario Ctrl + } -->
 
     <!-- Tag  / Etiquetas .. Inscrustar la maquetacion-->
     <!-- Tag / Etiquetas .. Texto -->
     
+    <h2>Video insertado desde YouTube</h2>
     
+    <!-- Aquí va el video -->
+    <iframe width="560" height="315" 
+            src="https://www.youtube.com/embed/HcOc7P5BMi4" 
+            frameborder="0" 
+            allowfullscreen>
+    </iframe>
+    
+    <!-- Tag / Etiquetas .. Contacto de Whatsapp -->
+    <h2>Contacto por WhatsApp</h2>
+    <img src="img/boton_whatsapp.png" width="50" style="cursor:pointer;" onclick="openWhatsApp()" alt="Chat por WhatsApp">
+
+    <!-- Tag / Etiquetas .. Video de presentación -->
+    <h2>Video de presentación</h2>
+    <video width="320" height="240" controls>
+        <source src="videos/video1.mp4" type="video/mp4">
+        Tu navegador no soporta la etiqueta de video.
+    </video>
+
+    <!-- Tag / Etiquetas .. Audios de presentación -->
+    <h2>Audio de presentación</h2>
+    <audio id="audioPlayer" controls></audio>
+        <source src="audios/audio1.mp3" type="audio/mpeg">
+        Tu navegador no soporta la etiqueta de audio.
+    </audio>
+
+    <h2>Audio de presentación</h2>
+    <audio id="audioPlayer" controls></audio>
+        <source src="audios/audio2.mp3" type="audio/mpeg">
+        Tu navegador no soporta la etiqueta de audio.
+    </audio>
+
     <p>
         Esto es un párrafo en HTML básico
     </p>

@@ -4,12 +4,90 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <style>
+        form {
+            display: flex;
+            flex-direction: column;
+            width: 300px;
+            margin: 20px 0;
+        }
+    </style>
 </head>
+
 <body>
     
     <h2>Bienvenidos a la página de Contactos</h2>
 
+    <h2>Formulario de Registros</h2>
+    <form action="">
+        <label for="nombres">Nombre:</label>
+        <input type="text" id="nombres" name="nombres" required>
+        <label for="apellidos">Apellidos:</label>
+        <input for="apellidos" type="text" id="apellidos" name="apellidos" required>
+
+        <label for="">Documento de identidad:</label>
+        <select>
+            <option value="">DNI</option>
+            <option value="">Pasaporte</option>
+            <option value="">CC</option>
+            <option value="">Cedula de Extranjeria</option>
+        </select>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="mensaje">Mensaje:</label>
+        <textarea type = "" id="mensaje" name="mensaje" required></textarea>
+        <br>
+
+        <h2>Identidad de Género</h2>
+
+        <label for = "genero">Seleccionde su identidad de Género:</label>
+        <input type = "radio" id="masculino" name="genero" value="masculino"><label for = "masculino">Masculino</label>
+        <input type = "radio" id="femenino" name="genero" value="femenino"><label for = "femenino">Femenino</label>
+        <input type = "radio" id="otro" name="genero" value="otro"><label for = "otro">Otro</label>
+        <br>
+
+        
+
+        <h2>Seccion de Gustos</h2>
+        
+        <label for = "">Seleccione sus hobbies</label>
+        <input type = "checkbox" id="deportes" name="hobbies" value="deportes"><label for = "deportes">Deportes</label>
+        <input type = "checkbox" id="musica" name="hobbies" value="musica"><label for = "musica">Música</label>
+        <input type = "checkbox" id="lectura" name="hobbies" value="lectura"><label for = "lectura">Lectura</label>
+        <input type = "checkbox" id="videojuegos" name ="hobbies" value="videojuegos"><label for = "videojuegos">Videojuegos</label>
+        <br>
+
+        <textarea id="comentarios" name="comentarios" rows="4" placeholder="Comentarios"></textarea>
+        <br>
+
+        <button type="submit">Registrar Usuario</button>
+
+        <h2>Seccion de Registro</h2>
+
+        <label for = "usuario">Usuario:</label>
+        <input type="text" id="usuario" name="usuario" required>
+        <label for = "Contraseña">Contraseña</label>
+        <input type="password" id = "contraseña" name = "contraseña" required>
+        <br>
+
+    <!-- Script para evitar que se ingresen números en el campo de nombre -->
+
+    <script>
+        document.getElementById('nombres').addEventListener('input', function(e) {
+            this.value = this.value.replace(/[0-9]/g, '')
+        })
+        document.getElementById('apellidos').addEventListener('input', function(e) {
+            this.value = this.value.replace(/[0-9]/g, '')
+        })
+    </script>
+
+
     <a href="../index.html">Volver al index</a>
+
+    </form>
 
 </body>
 </html>
